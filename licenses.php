@@ -10,7 +10,8 @@
          ">
       <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
       <title>procrastiSlides v0.01</title>
-      <meta name="description" content="Hello World! Only a simple coffee site (but respects your dark mode setting and has responsive web design). No ads, no tracking, nothing but basic coffee and good service.">
+      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design. <br>
+         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏃 great for procratinators who need to get a presentation out, quick! 👟. 🏫 try copy and pasting your school notes! that might even work 😂">
    </head>
    <body>
       <div class=banner>
@@ -31,10 +32,10 @@
 
          <h3>licenses</h3>
          <ul>
-           <li> <a href="licenses/gpl2.php"> pandoc's license (gnu gpl v2)</a> </li>
-           <li><a href="licenses/LaTeX.php"> The LaTeX Project Public License (1.3)</a></li>
-           <li><a href="licenses/mit.php"> SimpleMDE's license (mit)</a></li>
-           <li><a href="licenses/isc.php"> suckless sent's license (isc)</a></li>
+           <li> <a href="gpl2.php"> pandoc's license (gnu gpl v2)</a> </li>
+           <li><a href="LaTeX.php"> The LaTeX Project Public License (1.3)</a></li>
+           <li><a href="mit.php"> SimpleMDE's license (mit)</a></li>
+           <li><a href="isc.php"> suckless sent's license (isc)</a></li>
 
          </ul>
 

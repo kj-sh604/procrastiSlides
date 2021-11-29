@@ -10,7 +10,8 @@
          ">
       <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
       <title>procrastiSlides v0.01</title>
-      <meta name="description" content="Hello World! Only a simple coffee site (but respects your dark mode setting and has responsive web design). No ads, no tracking, nothing but basic coffee and good service.">
+      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design. <br>
+         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏃 great for procratinators who need to get a presentation out, quick! 👟. 🏫 try copy and pasting your school notes! that might even work 😂">
    </head>
    <body>
       <div class=banner>
