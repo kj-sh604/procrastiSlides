@@ -35,7 +35,7 @@
       <div class="centered">
         <?php
 
-        if(isset($_POST['compile']))
+        if(isset($_POST['defaultIsKing']))
         {
           $_SESSION['pres'] = uniqid('pres', true) . '.md';
           $_SESSION['push'] = uniqid('push', true)  . '.md';
@@ -48,18 +48,160 @@
           $filename = $_SESSION['filename']; // output file name
 
 
-          $userMarkdown = $_POST['user-input'];
-          $_SESSION['user-input'] = $_POST['user-input'];
-          $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=xelatex";
+          $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+          // $_SESSION['user-input'] = $_POST['user-input'];
+          $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
 
           shell_exec("echo '$userMarkdown' > output/'$push'");
-          shell_exec("cat output/pres.md output/'$push' > output/'$convert'");
+          shell_exec("cat output/defaultIsKing.md output/'$push' > output/'$convert'");
           shell_exec($conversion);
           // sleep(1); ?>
 
           <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
 
          <?php } ?>
+
+         <?php
+
+         if(isset($_POST['strengthInNumbers']))
+         {
+           $_SESSION['pres'] = uniqid('pres', true) . '.md';
+           $_SESSION['push'] = uniqid('push', true)  . '.md';
+           $_SESSION['convert'] = uniqid('convert', true)  . '.md';
+           $_SESSION['filename'] = uniqid('procrastiSlides_', true) . '.pdf';
+
+           $pres = $_SESSION['pres']; // filename of the template file with metadata
+           $push = $_SESSION['push']; // filename of where the user data is stored
+           $convert = $_SESSION['convert']; // concatanated file to be converted to .pdf
+           $filename = $_SESSION['filename']; // output file name
+
+
+           $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+           // $_SESSION['user-input'] = $_POST['user-input'];
+           $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
+
+           shell_exec("echo '$userMarkdown' > output/'$push'");
+           shell_exec("cat output/strengthInNumbers.md output/'$push' > output/'$convert'");
+           shell_exec($conversion);
+           // sleep(1); ?>
+
+           <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
+
+          <?php } ?>
+
+          <?php
+
+          if(isset($_POST['thatMagazine']))
+          {
+            $_SESSION['pres'] = uniqid('pres', true) . '.md';
+            $_SESSION['push'] = uniqid('push', true)  . '.md';
+            $_SESSION['convert'] = uniqid('convert', true)  . '.md';
+            $_SESSION['filename'] = uniqid('procrastiSlides_', true) . '.pdf';
+
+            $pres = $_SESSION['pres']; // filename of the template file with metadata
+            $push = $_SESSION['push']; // filename of where the user data is stored
+            $convert = $_SESSION['convert']; // concatanated file to be converted to .pdf
+            $filename = $_SESSION['filename']; // output file name
+
+
+            $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+            // $_SESSION['user-input'] = $_POST['user-input'];
+            $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
+
+            shell_exec("echo '$userMarkdown' > output/'$push'");
+            shell_exec("cat output/thatMagazine.md output/'$push' > output/'$convert'");
+            shell_exec($conversion);
+            // sleep(1); ?>
+
+            <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
+
+           <?php } ?>
+
+           <?php
+
+           if(isset($_POST['cuppertinoIsh']))
+           {
+             $_SESSION['pres'] = uniqid('pres', true) . '.md';
+             $_SESSION['push'] = uniqid('push', true)  . '.md';
+             $_SESSION['convert'] = uniqid('convert', true)  . '.md';
+             $_SESSION['filename'] = uniqid('procrastiSlides_', true) . '.pdf';
+
+             $pres = $_SESSION['pres']; // filename of the template file with metadata
+             $push = $_SESSION['push']; // filename of where the user data is stored
+             $convert = $_SESSION['convert']; // concatanated file to be converted to .pdf
+             $filename = $_SESSION['filename']; // output file name
+
+
+             $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+             // $_SESSION['user-input'] = $_POST['user-input'];
+             $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
+
+             shell_exec("echo '$userMarkdown' > output/'$push'");
+             shell_exec("cat output/cuppertinoIsh.md output/'$push' > output/'$convert'");
+             shell_exec($conversion);
+             // sleep(1); ?>
+
+             <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
+
+            <?php } ?>
+
+            <?php
+
+            if(isset($_POST['lazyProfessor']))
+            {
+              $_SESSION['pres'] = uniqid('pres', true) . '.md';
+              $_SESSION['push'] = uniqid('push', true)  . '.md';
+              $_SESSION['convert'] = uniqid('convert', true)  . '.md';
+              $_SESSION['filename'] = uniqid('procrastiSlides_', true) . '.pdf';
+
+              $pres = $_SESSION['pres']; // filename of the template file with metadata
+              $push = $_SESSION['push']; // filename of where the user data is stored
+              $convert = $_SESSION['convert']; // concatanated file to be converted to .pdf
+              $filename = $_SESSION['filename']; // output file name
+
+
+              $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+              // $_SESSION['user-input'] = $_POST['user-input'];
+              $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
+
+              shell_exec("echo '$userMarkdown' > output/'$push'");
+              shell_exec("cat output/lazyProfessor.md output/'$push' > output/'$convert'");
+              shell_exec($conversion);
+              // sleep(1); ?>
+
+              <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
+
+             <?php } ?>
+
+             <?php
+
+             if(isset($_POST['redmond2003']))
+             {
+               $_SESSION['pres'] = uniqid('pres', true) . '.md';
+               $_SESSION['push'] = uniqid('push', true)  . '.md';
+               $_SESSION['convert'] = uniqid('convert', true)  . '.md';
+               $_SESSION['filename'] = uniqid('procrastiSlides_', true) . '.pdf';
+
+               $pres = $_SESSION['pres']; // filename of the template file with metadata
+               $push = $_SESSION['push']; // filename of where the user data is stored
+               $convert = $_SESSION['convert']; // concatanated file to be converted to .pdf
+               $filename = $_SESSION['filename']; // output file name
+
+
+               $userMarkdown = $_SESSION['user-input']; // this used to be _POST['user-input']
+               // $_SESSION['user-input'] = $_POST['user-input'];
+               $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex";
+
+               shell_exec("echo '$userMarkdown' > output/'$push'");
+               shell_exec("cat output/redmond2003.md output/'$push' > output/'$convert'");
+               shell_exec($conversion);
+               // sleep(1); ?>
+
+               <h2><a href="output/<?php echo $_SESSION['filename']; ?>">download presentation</a></h2>
+
+              <?php } ?>
+
+
 
       </div>
 

@@ -1,6 +1,8 @@
 ---
 theme:
-- Copenhagen
+- AnnArbor
 fontsize:
 - 17pt
+fontfamily:
+- cabin
 ---
