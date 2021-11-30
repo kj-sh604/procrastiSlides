@@ -139,6 +139,7 @@ button {
 
 ul.no-bullets {
     list-style-type: none;
+		font-family: monospace;
 }
 
 /* SimpleMDE Theme Dark v0.0.0 https://github.com/xcatliu/simplemde-theme-dark#readme */
