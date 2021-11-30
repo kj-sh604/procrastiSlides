@@ -12,7 +12,7 @@ session_start();
       <link rel = "icon" href = "img/site-icon.webp" type = "image/x-icon">
       <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
       <title>procrastiSlides v0.01</title>
-      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design. 
+      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design.
          non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏃 great for procratinators who need to get a presentation out, quick! 👟. 🏫 try copy and pasting your school notes! that might even work 😂">
    </head>
    <body>
@@ -98,11 +98,30 @@ session_start();
 
                   <a name="how-to"><h2 class="centered">how to:</h2></a>
                   <ul>
-                    <li>type '#' to indicate that you are starting a new slide</li>
-                    <li>you can add a "section title" after each '#' to name that portion of your presentation</li>
-                    <li>type/format text underneath the '#' for the slide contents</li>
+                    <li>type '#' to indicate that you are starting a new slide and then press ↵ (enter/return) twice.</li>
+                    <li>you can add a "section title" after each '#' to name that portion of your presentation.</li>
+                    <ul>
+                      <li>if you choose to add a section title make sure there is a space after the "#" (# section title).</li>
+                    </ul>
+                    <li>type/format text underneath the '#' for the slide contents.</li>
+                    <ul>
+                      <li>make sure to start typing your slide content two ↵'s ("enter key presses") away from the "#".</li>
+                      <li>lists require to be formatted in this manner as well, like so:</li>
+                      <ul class="no-bullets">
+                        <li> <pre>
+
+                            # slide title
+
+                            This is a list
+
+                            * item 1
+                            * item 2
+                            * item 3
+                        </pre> </li>
+
+                      </ul>
+                    </ul>
                   </ul>
-                  <br>
 
                   <p class="centered"> <i>It's highly recommended that you use markdown lists rather than plain text lists</i> </p>
 
