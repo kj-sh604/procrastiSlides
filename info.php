@@ -33,18 +33,17 @@
          <h3>(non-)features</h3>
          <ul>
            <li>exports only to .pdf</li>
-           <li>a presentation from just a simple text file or markdown.</li>
-           <li>utf-8 is supported.</li>
-           <li>images can be displayed (no text on the same slide).</li>
+           <li>a presentation from just a simple text file or markdown</li>
+           <li>images can be displayed (no text on the same slide)</li>
            <li>no animations</li>
-           <li>slides with exuberant amount of lines or characters produce rendering glitches intentionally to prevent you from holding bad presentations.</li>
+           <li>slides with exuberant amount of lines or characters produce rendering glitches intentionally to prevent you from holding bad presentations</li>
          </ul>
 
          <h3>planned features</h3>
          <ul>
            <li>unicode color emoji support (via <a target="_blank" href="https://fonts.google.com/noto/specimen/Noto+Sans">noto sans</a> )</li>
            <li>different font options</li>
-           <li>presentation style templates</li>
+           <li>more presentation style templates</li>
          </ul>
 
          <h3>technologies utilized</h3>
