@@ -137,6 +137,19 @@ button {
 	text-align: center;
 }
 
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 ul.no-bullets {
     list-style-type: none;
 		font-family: monospace;
