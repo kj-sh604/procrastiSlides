@@ -101,7 +101,7 @@ session_start();
                     <li>type '#' to indicate that you are starting a new slide and then press ↵ (enter/return) twice.</li>
                     <li>you can add a "section title" after each '#' to name that portion of your presentation.</li>
                     <ul>
-                      <li>if you choose to add a section title make sure there is a space after the "#" and the title, like so:</li>
+                      <li>if you choose to add a section title, a space after the "#" and your slide title is required:</li>
                       <ul class="no-bullets">
                         <li> <pre>
 
