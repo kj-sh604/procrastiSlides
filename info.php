@@ -10,7 +10,7 @@
          ">
       <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
       <title>procrastiSlides v0.01</title>
-      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design. 
+      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design.
          non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏃 great for procratinators who need to get a presentation out, quick! 👟. 🏫 try copy and pasting your school notes! that might even work 😂">
    </head>
    <body>
@@ -26,8 +26,8 @@
 
       <?php include "includes/nav-header.php" ?>
 
-      <h3 class="centered">📑 procrastiSlides aims to provide a way for users to create quick and elegant slideshows using
-        open source technologies. 📂
+      <h3 class="centered">📑 procrastiSlides aims to provide a quick way for users to create elegant slideshow presentations using
+        open source technologies 📂
       </h3>
 
          <h3>(non-)features</h3>
