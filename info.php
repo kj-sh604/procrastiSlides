@@ -66,7 +66,13 @@
            <li>SimpleMDE's <a target="_blank" href="https://github.com/sparksuite/simplemde-markdown-editor">github</a> </li>
            <li> <a target="_blank" href="https://www.latex-project.org/">LaTex-project.org</a> </li>
            <li>build of suckless sent with pdf export by <a target="_blank" href="https://github.com/BigHeadGeorge/sent-pdf">BigHeadGeorge</a> </li>
-         </ul>
+         </ul><br>
+         <h2 class="centered">backstory and demo:</h2>
+         </a><br>
+         <div class="responsive-video">
+            <iframe class="video" width="854" height="480" src="https://www.youtube.com/embed/X-42ZqaiStw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         <br>
       </div>
 
       <br><br><br>
