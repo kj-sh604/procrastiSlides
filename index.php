@@ -77,7 +77,7 @@
       <div>
          <h2 class="centered">plain text or markdown goes here:</h2>
          <form class="" action="index.php" method="post">
-            <textarea id="user-input" name="user-input" rows="8" cols="80" value= <?php echo $_SESSION['user-input']; ?>></textarea>
+            <textarea id="user-input" name="user-input" rows="8" cols="80"><?php echo $_SESSION['user-input']; ?></textarea>
             <div class="centered">
                <button type="submit" name="compile">create presentation</button>
             </div>
