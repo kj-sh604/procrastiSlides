@@ -9,13 +9,13 @@
       <link rel="stylesheet" href="https://cdn.rawgit.com/xcatliu/simplemde-theme-dark/master/dist/simplemde-theme-dark.min.css
          ">
       <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-      <title>procrastiSlides v0.01: quick & elegant presentations from plain text/markdown for procrastinators and crammers 😆</title>
-      <meta name="description" content="only a simple presentation(s) site that respects your dark mode setting and has responsive web design.
-         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏃 great for procratinators who need to get a presentation out, quick! 👟. 🏫 try copy and pasting your school notes! that might even work 😂">
+      <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
+      <meta name="description" content="create presentations from markdown or plain text! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
+         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
    </head>
    <body>
       <div class=banner>
-         <h1>📑 procrastiSlides v0.01 licenses page 🎬</h1>
+         <h1>🏛 licenses 🧑‍⚖️</h1>
          <hr/>
       </div>
       <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>)
