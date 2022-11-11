@@ -26,7 +26,10 @@
       <h3 class="centered">🏃 great for procratinators who need to get a presentation out, quick! 👟</h3>
       <h3 class="centered">🏫 try copy and pasting your school notes! that might even work 😂</h3>
       <hr>
-      <?php include "includes/nav-header.php" ?>
+      <?php 
+         include "includes/nav-header.php";
+         $_SESSION['user-input'] = null;
+      ?>
       <?php if(isset($_POST['compile']))
          {
 
