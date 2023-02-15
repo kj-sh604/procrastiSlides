@@ -173,9 +173,9 @@ ul.no-bullets {
 
 	button {
 			background-color: #D4D4D4;
-			border: blue 1px solid;
+			border: #0072c6 1px solid;
 			padding: 5px 10px;
-			color: blue;
+			color: #0072c6;
 			text-decoration: none;
 			border-radius: 3px;
 			margin: 10px 0px;
@@ -188,10 +188,10 @@ ul.no-bullets {
 		color: black ;
 	}
 	a {
-		color: blue ;
+		color: #0072c6 ;
 	}
 	a:visited {
-		color: blue ;
+		color: #0072c6 ;
 	}
 	h2 {
 		color: inherit ;
