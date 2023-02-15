@@ -13,7 +13,7 @@ a {
 }
 
 a:visited {
-	color: gray ;
+	color: lightblue ;
 }
 
 h1 {
@@ -191,7 +191,7 @@ ul.no-bullets {
 		color: blue ;
 	}
 	a:visited {
-		color: purple ;
+		color: blue ;
 	}
 	h2 {
 		color: inherit ;
