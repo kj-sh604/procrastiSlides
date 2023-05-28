@@ -16,7 +16,7 @@
    </head>
    <body>
       <div class=banner>
-         <h1>📑 procrastiSlides v0.01 🎬</h1>
+         <h1>📑 procrastiSlides v0.02 🎬</h1>
          <hr/>
       </div>
       <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>)
