@@ -17,7 +17,7 @@
    </head>
    <body>
       <div class=banner>
-         <h1>📑 procrastiSlides v0.01 🎬</h1>
+         <h1>📑 procrastiSlides v0.02 🎬</h1>
          <hr/>
       </div>
       <p class="centered">only a simple presentation(s) site that respects your dark mode setting and has responsive web design. <br>
