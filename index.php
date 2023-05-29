@@ -47,8 +47,28 @@
                   <h2>select</h2>
                </th>
                <tr>
-                  <td>placeHolderImage<br></td>
-                  <td><button type="submit" name="test169">test169</button></td>
+                  <td><img class=theme-select src="img/90sMakeUpCommercial.webp" alt="90sMakeUpCommercial"><br></td>
+                  <td><button type="submit" name="90sMakeUpCommercial">90sMakeUpCommercial</button></td>
+               </tr>
+               <tr>
+                  <td><img class=theme-select src="img/chicagoOlives.webp" alt="chicagoOlives"><br></td>
+                  <td><button type="submit" name="chicagoOlives">chicagoOlives</button></td>
+               </tr>
+               <tr>
+                  <td><img class=theme-select src="img/cleanMetropolis.webp" alt="cleanMetropolis"><br></td>
+                  <td><button type="submit" name="cleanMetropolis">cleanMetropolis</button></td>
+               </tr>
+               <tr>
+                  <td><img class=theme-select src="img/earlyCupertino.webp" alt="earlyCupertino"><br></td>
+                  <td><button type="submit" name="earlyCupertino">earlyCupertino</button></td>
+               </tr>
+               <tr>
+                  <td><img class=theme-select src="img/ohioCustard.webp" alt="ohioCustard"><br></td>
+                  <td><button type="submit" name="ohioCustard">ohioCustard</button></td>
+               </tr>
+               <tr>
+                  <td><img class=theme-select src="img/raleighAroundMe.webp" alt="raleighAroundMe"><br></td>
+                  <td><button type="submit" name="raleighAroundMe">raleighAroundMe</button></td>
                </tr>
                <tr>
                   <td><img class=theme-select src="img/defaultIsKing.webp" alt="defaultIsKing"><br></td>
