@@ -47,6 +47,10 @@
                   <h2>select</h2>
                </th>
                <tr>
+                  <td>placeHolderImage<br></td>
+                  <td><button type="submit" name="test169">test169</button></td>
+               </tr>
+               <tr>
                   <td><img class=theme-select src="img/defaultIsKing.webp" alt="defaultIsKing"><br></td>
                   <td><button type="submit" name="defaultIsKing">defaultIsKing</button></td>
                </tr>
