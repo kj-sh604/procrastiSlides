@@ -24,7 +24,7 @@
     souce community throughout the years… <b>🙌 Thank you! 🤗</b> </p>
       <hr>
 
-      <?php include "includes/nav-header.php" ?>
+      <?php include "includes/nav-header.php"; ?>
 
       <h3 class="centered">📑 procrastiSlides aims to provide a way for users to create quick and elegant slideshows using
         open source technologies. 📂
@@ -51,7 +51,7 @@
       <br><br><br>
       <footer>
 
-        <?php include "includes/nav-footer.php" ?>
+        <?php include "includes/nav-footer.php"; ?>
 
       </footer>
    </body>

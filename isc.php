@@ -24,7 +24,7 @@
     souce community throughout the years… <b>🙌 Thank you! 🤗</b> </p>
       <hr>
 
-      <?php include "includes/nav-header.php" ?>
+      <?php include "includes/nav-header.php"; ?>
 <div class="centered">
       <pre>
 
@@ -64,7 +64,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 <br>
       <footer>
 
-          <?php include "includes/nav-footer.php" ?>
+          <?php include "includes/nav-footer.php"; ?>
 
       </footer>
    </body>
