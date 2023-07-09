@@ -42,10 +42,11 @@
 
     <h3>technologies utilized</h3>
     <ul>
-        <li>gnu/linux and its coreutils</li>
+        <li>gnu/linux</li>
         <li>pandoc</li>
         <li>LaTeX</li>
         <li>SimpleMDE</li>
+        <li>sandboxed rust uutils (gnu coreutils re-write)</li>
         <li>build of suckless sent with pdf export by <a target="_blank" href="https://github.com/BigHeadGeorge/sent-pdf">BigHeadGeorge</a> </li>
     </ul>
 
