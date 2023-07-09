@@ -20,10 +20,7 @@
         <h1>🏛 licenses 🧑‍⚖️</h1>
         <hr />
     </div>
-    <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>)
-        and Luke Smith's <a target="_blank" href="https://youtu.be/dum7q6UXiCE">video</a> on creating presentations using markdown and LaTeX beamer.
-        We would like to personally thank them for all the educational resources (for suckless, it's the source code 😂) that they have shared with the open
-        souce community throughout the years… <b>🙌 Thank you! 🤗</b> </p>
+    <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>). it uses pandoc and LaTeX beamer for the backend. <br><br><b>latest feature update:</b> addition of 16:9 themes</p>
     <hr>
 
     <?php include "includes/nav-header.php"; ?>
