@@ -27,7 +27,6 @@ session_start(); ?>
     <hr>
     <?php
     include "includes/nav-header.php";
-    $_SESSION["user-input"] = null;
     ?>
     <?php if (isset($_POST["compile"])) {
         $_SESSION["user-input"] = $_POST["user-input"]; ?>
