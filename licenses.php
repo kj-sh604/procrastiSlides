@@ -38,7 +38,7 @@
     <ul>
         <li> <a target="_blank" href="https://pandoc.org/">pandoc.org</a> </li>
         <li>SimpleMDE's <a target="_blank" href="https://github.com/sparksuite/simplemde-markdown-editor">github</a> </li>
-        <li> <a target="_blank" href="https://www.latex-project.org/">LaTex-project.org</a> </li>
+        <li> <a target="_blank" href="https://www.latex-project.org/">LaTeX-project.org</a> </li>
         <li>rust <a target="_blank" href="https://github.com/uutils/coreutils/">uutils/coreutils</a> project</li>
     </ul>
     </div>
