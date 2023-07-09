@@ -36,7 +36,7 @@
     <h3>planned features</h3>
     <ul>
         <li>unicode color emoji support (via <a target="_blank" href="https://fonts.google.com/noto/specimen/Noto+Sans">noto sans</a> )</li>
-        <li><s>different font options </s>&nbsp;decided that fonts will be a non-option and just have them embedded in final .pdf</li>
+        <li><s>different font options </s>&nbsp;font selection will be a non-option</li>
         <li><s>more presentation style templates</s>&nbsp;new 16:9 themes have been added</li>
     </ul>
 
@@ -51,7 +51,7 @@
 
     <h3>active developers</h3>
     <ul>
-        <li>blistakanjo604 (<a href="https://github.com/blistakanjo604">github</a>) </li>
+        <li>kj_sh604 (<a href="https://github.com/kj-sh604">github</a>) </li>
     </ul>
 
     <h3>related links</h3>
