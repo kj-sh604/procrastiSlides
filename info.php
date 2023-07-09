@@ -24,11 +24,6 @@
     <hr>
 
     <?php include "includes/nav-header.php"; ?>
-
-    <h3 class="centered">📑 procrastiSlides aims to provide a quick way for users to create elegant slideshow presentations using
-        open source technologies 📂
-    </h3>
-
     <h3>(non-)features</h3>
     <ul>
         <li>exports only to .pdf</li>

@@ -25,10 +25,6 @@
 
     <?php include "includes/nav-header.php"; ?>
 
-    <h3 class="centered">📑 procrastiSlides aims to provide a way for users to create quick and elegant slideshows using
-        open source technologies. 📂
-    </h3>
-
     <h3>licenses</h3>
     <ul>
         <li> <a href="gpl2.php"> pandoc's license (gnu gpl v2)</a> </li>
