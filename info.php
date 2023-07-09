@@ -47,7 +47,6 @@
         <li>LaTeX</li>
         <li>SimpleMDE</li>
         <li>sandboxed rust uutils (gnu coreutils re-write)</li>
-        <li>build of suckless sent with pdf export by <a target="_blank" href="https://github.com/BigHeadGeorge/sent-pdf">BigHeadGeorge</a> </li>
     </ul>
 
     <h3>active developers</h3>
@@ -60,7 +59,7 @@
         <li> <a target="_blank" href="https://pandoc.org/">pandoc.org</a> </li>
         <li>SimpleMDE's <a target="_blank" href="https://github.com/sparksuite/simplemde-markdown-editor">github</a> </li>
         <li> <a target="_blank" href="https://www.latex-project.org/">LaTex-project.org</a> </li>
-        <li>build of suckless sent with pdf export by <a target="_blank" href="https://github.com/BigHeadGeorge/sent-pdf">BigHeadGeorge</a> </li>
+        <li>rust <a target="_blank" href="https://github.com/uutils/coreutils/">uutils/coreutils</a> project</li>
     </ul><br>
     <h2 class="centered">backstory and demo:</h2>
     </a><br>

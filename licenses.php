@@ -39,7 +39,7 @@
         <li> <a target="_blank" href="https://pandoc.org/">pandoc.org</a> </li>
         <li>SimpleMDE's <a target="_blank" href="https://github.com/sparksuite/simplemde-markdown-editor">github</a> </li>
         <li> <a target="_blank" href="https://www.latex-project.org/">LaTex-project.org</a> </li>
-        <li>build of suckless sent with pdf export by <a target="_blank" href="https://github.com/BigHeadGeorge/sent-pdf">BigHeadGeorge</a> </li>
+        <li>rust <a target="_blank" href="https://github.com/uutils/coreutils/">uutils/coreutils</a> project</li>
     </ul>
     </div>
 
