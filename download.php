@@ -42,10 +42,9 @@
             $convert = $_SESSION["convert"] = uniqid("convert", true) . ".md"; // concatenated file to be converted to .pdf
             $filename = $_SESSION["filename"] = uniqid("procrastiSlides_", true) . ".pdf"; // output file name
 
-            $userMarkdown = $_SESSION["user-input"];
-            $userMarkdownToPush = escapeshellarg($userMarkdown); // escape the user input
+            $userMarkdown = escapeshellarg($_SESSION["user-input"]);
             $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex --include-in-header=output/header.tex";
-            $createPushFile = "echo $userMarkdownToPush | sed 's/'\"'\"'/’/g' > output/'$push'";
+            $createPushFile = "echo $userMarkdown | sed 's/'\"'\"'/’/g' > output/'$push'";
             $createConvertFile = "cat $templateFile output/'$push' > output/'$convert'";
 
             shell_exec($createPushFile);
