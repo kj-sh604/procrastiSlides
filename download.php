@@ -37,21 +37,19 @@
 
         function generatePresentation($templateFile)
         {
-            $_SESSION["pres"] = uniqid("pres", true) . ".md";
-            $_SESSION["push"] = uniqid("push", true) . ".md";
-            $_SESSION["convert"] = uniqid("convert", true) . ".md";
-            $_SESSION["filename"] = uniqid("procrastiSlides_", true) . ".pdf";
-
-            $pres = $_SESSION["pres"]; // filename of the template file with metadata
-            $push = $_SESSION["push"]; // filename of where the user data is stored
-            $convert = $_SESSION["convert"]; // concatenated file to be converted to .pdf
-            $filename = $_SESSION["filename"]; // output file name
+            $pres = $_SESSION["pres"] = uniqid("pres", true) . ".md"; // filename of the template file with metadata
+            $push = $_SESSION["push"] = uniqid("push", true) . ".md"; // filename of where the user data is stored
+            $convert = $_SESSION["convert"] = uniqid("convert", true) . ".md"; // concatenated file to be converted to .pdf
+            $filename = $_SESSION["filename"] = uniqid("procrastiSlides_", true) . ".pdf"; // output file name
 
             $userMarkdown = $_SESSION["user-input"];
+            $userMarkdownToPush = escapeshellarg($userMarkdown); // escape the user input
             $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex --include-in-header=output/header.tex";
+            $createPushFile = "echo $userMarkdownToPush | sed 's/'\"'\"'/’/g' > output/'$push'";
+            $createConvertFile = "cat $templateFile output/'$push' > output/'$convert'";
 
-            shell_exec("echo '$userMarkdown' > output/'$push'");
-            shell_exec("cat $templateFile output/'$push' > output/'$convert'");
+            shell_exec($createPushFile);
+            shell_exec($createConvertFile);
             shell_exec($conversion);
 
             echo "<h2><a href=\"output/$filename\">download presentation</a></h2>";
