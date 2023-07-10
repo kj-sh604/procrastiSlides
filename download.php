@@ -44,7 +44,7 @@
 
             $userMarkdown = escapeshellarg($_SESSION["user-input"]);
             $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex --include-in-header=output/header.tex";
-            $createPushFile = "echo $userMarkdown | sed 's/'\"'\"'/’/g' > output/'$push'";
+            $createPushFile = "echo $userMarkdown | iconv -c -t ASCII//TRANSLIT | sed 's/'\"'\"'/’/g' > output/'$push'";
             $createConvertFile = "cat $templateFile output/'$push' > output/'$convert'";
 
             shell_exec($createPushFile);
