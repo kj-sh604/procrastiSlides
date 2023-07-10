@@ -48,7 +48,7 @@
             $filename = $_SESSION["filename"]; // output file name
 
             $userMarkdown = $_SESSION["user-input"];
-            $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=xelatex --include-in-header=output/header.tex";
+            $conversion = "pandoc -f markdown+hard_line_breaks output/'$convert' -t beamer -o output/'$filename' --pdf-engine=pdflatex --include-in-header=output/header.tex";
 
             shell_exec("echo '$userMarkdown' > output/'$push'");
             shell_exec("cat $templateFile output/'$push' > output/'$convert'");
