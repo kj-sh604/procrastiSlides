@@ -20,7 +20,7 @@ session_start(); ?>
         <h1>📑 procrastiSlides v0.02 🎬</h1>
         <hr />
     </div>
-    <p class="centered">simple presentation(s) site for quick slides from plain text / markdown <br>
+    <p class="centered">simple presentation(s) site for quick slides from markdown <br>
         (powered by LaTeX beamer, pandoc, and the rust uutils)</p>
     <p class="centered"><b>✨ latest feature update:</b> addition of 16:9 themes 🚀</p>
     <hr>
@@ -95,7 +95,7 @@ session_start(); ?>
     } ?>
     <?php if (!isset($_POST["compile"])) { ?>
         <div>
-            <h2 class="centered">plain text or markdown goes here:</h2>
+            <h2 class="centered">markdown goes here:</h2>
             <form class="" action="index.php" method="post">
                 <textarea id="user-input" name="user-input" rows="8" cols="80"><?php echo $_SESSION["user-input"]; ?></textarea>
                 <div class="centered">
