@@ -61,15 +61,8 @@
         <li> <a target="_blank" href="https://www.latex-project.org/">LaTeX-project.org</a> </li>
         <li>rust <a target="_blank" href="https://github.com/uutils/coreutils/">uutils/coreutils</a> project</li>
     </ul><br>
-    <h2 class="centered">backstory and demo:</h2>
-    </a><br>
-    <div class="responsive-video">
-        <iframe class="video" width="854" height="480" src="https://www.youtube.com/embed/X-42ZqaiStw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
     <br>
     </div>
-
-    <br><br><br>
     <footer>
 
         <?php include "includes/nav-footer.php"; ?>
