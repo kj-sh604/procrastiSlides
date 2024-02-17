@@ -1,4 +1,4 @@
-# procrastislides
+# procrastiSlides
 ***Web-based Markdown Presentation Generator utilizing `pandoc` and `pdflatex`***
 
 &nbsp;
