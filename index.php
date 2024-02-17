@@ -137,10 +137,10 @@ session_start(); ?>
             </ul>
             <br>
             <p class="centered"> <i>It's highly recommended that you use markdown lists rather than plain text lists</i> </p><br>
-            <h2 class="centered">short video how-to:</h2>
+            <h2 class="centered">short demo video:</h2>
             </a><br>
             <div class="responsive-video">
-                <iframe class="video" height="854px" width="480px" src="https://www.youtube.com/embed/Cj-NkNKFnN8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="480" src="https://www.youtube.com/embed/DGudYy0sfx8" title="procrastiSlides demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br>
         </div>
