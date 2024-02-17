@@ -1,5 +1,5 @@
 # procrastislides
-***Quick Presentations from Markdown via `pandoc` and `pdflatex`***
+***Web-based Markdown Presentation Generator utilizing `pandoc` and `pdflatex`***
 
 &nbsp;
 
