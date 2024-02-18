@@ -15,7 +15,7 @@
 - texlive-pictures
 
 ## Demo and Links
-[![Short Video Demo of procrastislides](https://img.youtube.com/vi/DGudYy0sfx8/0.jpg)](https://youtu.be/DGudYy0sfx8)
+[![Short Video Demo of procrastislides](https://aedrielkylejavier.me/assets/new-procrastiSlides-demo.gif)](https://youtu.be/DGudYy0sfx8)
 
 Main instance is found on: *[https://procrastislides.com/](https://procrastislides.com/)*
 
