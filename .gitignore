@@ -1,6 +1,3 @@
-# Ignore files starting with "procrastiSlides"
 procrastiSlides*.pdf
-
-# Ignore the conversion files
 push*.md
 convert*.md
