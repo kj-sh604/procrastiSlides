@@ -16,15 +16,9 @@ session_start(); ?>
 </head>
 
 <body>
-    <div class=banner>
-        <h1>📑 procrastiSlides v0.02 🎬</h1>
-        <hr />
-    </div>
-    <p class="centered">simple presentation(s) site for quick slides from markdown <br>
-        (powered by LaTeX beamer, pandoc, and the rust uutils)</p>
-    <p class="centered"><b>✨ latest feature update:</b> addition of 16:9 themes 🚀</p>
-    <hr>
     <?php
+    include "includes/procrastislides-banner.php";
+    include "includes/main-info.php";
     include "includes/nav-header.php";
     ?>
     <?php if (isset($_POST["compile"])) {
