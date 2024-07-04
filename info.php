@@ -16,14 +16,11 @@
 </head>
 
 <body>
-    <div class=banner>
-        <h1>📃 info 📬</h1>
-        <hr />
-    </div>
-    <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>). it uses pandoc and LaTeX beamer for the backend. <br><br><b>latest feature update:</b> addition of 16:9 themes</p>
-    <hr>
-
-    <?php include "includes/nav-header.php"; ?>
+    <?php
+    include "includes/info-banner.php";
+    include "includes/secondary-info.php";
+    include "includes/nav-header.php";
+    ?>
     <h3>(non-)features</h3>
     <ul>
         <li>exports only to .pdf</li>
