@@ -17,14 +17,11 @@
 </head>
 
 <body>
-    <div class=banner>
-        <h1>📑 procrastiSlides v0.02 🎬</h1>
-        <hr />
-    </div>
-    <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>). it uses pandoc and LaTeX beamer for the backend. <br><br><b>latest feature update:</b> addition of 16:9 themes</p>
-    <hr>
-
-    <?php include "includes/nav-header.php"; ?>
+    <?php
+    include "includes/procrastislides-banner.php";
+    include "includes/secondary-info.php";
+    include "includes/nav-header.php";
+    ?>
     <br>
 
     <h3 class="centered">🎉 your procrastiSlides .pdf presentation has been generated successfully!!! 🍾
@@ -51,7 +48,7 @@
             shell_exec($createConvertFile);
             shell_exec($conversion);
 
-            echo "<h2><a href=\"output/$filename\">download presentation</a></h2>";
+            echo "<h2><a href=\"output/$filename\" target=_blank>download presentation</a></h2>";
         }
 
         if (isset($_POST["90sMakeUpCommercial"])) {
