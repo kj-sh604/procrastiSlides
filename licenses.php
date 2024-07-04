@@ -16,15 +16,11 @@
 </head>
 
 <body>
-    <div class=banner>
-        <h1>🏛 licenses 🧑‍⚖️</h1>
-        <hr />
-    </div>
-    <p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>). it uses pandoc and LaTeX beamer for the backend. <br><br><b>latest feature update:</b> addition of 16:9 themes</p>
-    <hr>
-
-    <?php include "includes/nav-header.php"; ?>
-
+    <?php
+    include "includes/license-banner.php";
+    include "includes/secondary-info.php";
+    include "includes/nav-header.php";
+    ?>
     <h3>licenses</h3>
     <ul>
         <li> <a href="gpl2.php"> pandoc's license (gnu gpl v2)</a> </li>
