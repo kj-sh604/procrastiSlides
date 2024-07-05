@@ -34,51 +34,51 @@ session_start(); ?>
                         <h2>select</h2>
                     </th>
                     <tr>
-                        <td><img class=theme-select src="img/90sMakeUpCommercial.webp" alt="90sMakeUpCommercial"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/90sMakeUpCommercial.webp" alt="90sMakeUpCommercial"><br></td>
                         <td><button type="submit" name="90sMakeUpCommercial">90sMakeUpCommercial</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/chicagoOlives.webp" alt="chicagoOlives"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/chicagoOlives.webp" alt="chicagoOlives"><br></td>
                         <td><button type="submit" name="chicagoOlives">chicagoOlives</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/cleanMetropolis.webp" alt="cleanMetropolis"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/cleanMetropolis.webp" alt="cleanMetropolis"><br></td>
                         <td><button type="submit" name="cleanMetropolis">cleanMetropolis</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/earlyCupertino.webp" alt="earlyCupertino"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/earlyCupertino.webp" alt="earlyCupertino"><br></td>
                         <td><button type="submit" name="earlyCupertino">earlyCupertino</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/ohioCustard.webp" alt="ohioCustard"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/ohioCustard.webp" alt="ohioCustard"><br></td>
                         <td><button type="submit" name="ohioCustard">ohioCustard</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/raleighAroundMe.webp" alt="raleighAroundMe"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/raleighAroundMe.webp" alt="raleighAroundMe"><br></td>
                         <td><button type="submit" name="raleighAroundMe">raleighAroundMe</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/defaultIsKing.webp" alt="defaultIsKing"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/defaultIsKing.webp" alt="defaultIsKing"><br></td>
                         <td><button type="submit" name="defaultIsKing">defaultIsKing</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/cuppertinoIsh.webp" alt="Cuppertino-Ish"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/cuppertinoIsh.webp" alt="Cuppertino-Ish"><br></td>
                         <td><button type="submit" name="cuppertinoIsh">cuppertinoIsh</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/lazyProfessor.webp" alt="lazyProfessor"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/lazyProfessor.webp" alt="lazyProfessor"><br></td>
                         <td><button type="submit" name="lazyProfessor">lazyProfessor</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/redmond2003.webp" alt="redmond2003"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/redmond2003.webp" alt="redmond2003"><br></td>
                         <td><button type="submit" name="redmond2003">redmond2003</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/strengthInNumbers.webp" alt="strengthInNumbers"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/strengthInNumbers.webp" alt="strengthInNumbers"><br></td>
                         <td><button type="submit" name="strengthInNumbers">strengthInNumbers</button></td>
                     </tr>
                     <tr>
-                        <td><img class=theme-select src="img/thatMagazine.webp" alt="thatMagazine"><br></td>
+                        <td><img loading="lazy" class=theme-select src="img/thatMagazine.webp" alt="thatMagazine"><br></td>
                         <td><button type="submit" name="thatMagazine">thatMagazine</button></td>
                     </tr>
                 </table>
@@ -134,7 +134,7 @@ session_start(); ?>
             <h2 class="centered">short demo video:</h2>
             </a><br>
             <div class="responsive-video">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/DGudYy0sfx8" title="procrastiSlides demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe loading="lazy" width="100%" height="480" src="https://www.youtube.com/embed/DGudYy0sfx8" title="procrastiSlides demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br>
         </div>
