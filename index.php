@@ -22,7 +22,7 @@ session_start(); ?>
     include "includes/main-info.php";
     include "includes/nav-header.php";
     ?>
-    <script src='scripts/editor.js'></script>
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <?php if (isset($_POST["compile"])) {
         $_SESSION["user-input"] = $_POST["user-input"]; ?>
         <div class="centered">
