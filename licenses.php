@@ -2,19 +2,20 @@
 <html lang=en>
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/site-icon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/xcatliu/simplemde-theme-dark/master/dist/simplemde-theme-dark.min.css
-         ">
     <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
     <meta name="description" content="create .pdf presentations from markdown! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
          non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
+    <meta name="color-scheme" content="light dark"> 
 </head>
 
 <body>
     <?php
+    include "includes/link-tags.php";
     include "includes/license-banner.php";
     include "includes/secondary-info.php";
     include "includes/nav-header.php";
