@@ -6,10 +6,8 @@ session_start(); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=<?= time() ?>">
     <link rel="icon" href="img/site-icon.webp" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
     <meta name="description" content="create .pdf presentations from markdown! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
          non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
@@ -21,6 +19,7 @@ session_start(); ?>
     include "includes/main-info.php";
     include "includes/nav-header.php";
     ?>
+    <script src='scripts/editor.js'></script>
     <?php if (isset($_POST["compile"])) {
         $_SESSION["user-input"] = $_POST["user-input"]; ?>
         <div class="centered">
