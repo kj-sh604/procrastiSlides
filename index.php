@@ -92,7 +92,7 @@ session_start(); ?>
         <div>
             <br>
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for markdown text editor ✏</strong></summary>
+                <summary style="font-size: 1.125rem;"><strong>← expand for markdown text editor 📝</strong></summary>
                 <p>
                     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
                 <form class="" action="index.php" method="post">
@@ -107,7 +107,6 @@ session_start(); ?>
                     });
                 </script>
                 </p>
-                <link rel="stylesheet" href="../css/editor.css">
             </details>
             <br>
             <details>
