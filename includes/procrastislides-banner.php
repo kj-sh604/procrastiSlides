@@ -1,4 +1,4 @@
 <div class=banner>
-    <h1>📑 procrastiSlides v0.02p1 🎬</h1>
+    <h1>📑 procrastiSlides v0.02 p2 🎬</h1>
     <hr />
 </div>
