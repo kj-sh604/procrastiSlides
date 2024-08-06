@@ -92,7 +92,7 @@ session_start(); ?>
         <div>
             <br>
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for markdown text editor 📝</strong></summary>
+                <summary style="font-size: 1.125rem;"><strong>← expand to use the markdown editor 📝</strong></summary>
                 <p>
                     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
                 <form class="" action="index.php" method="post">
@@ -110,7 +110,7 @@ session_start(); ?>
             </details>
             <br>
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for a quick read how-to 📖</strong></summary>
+                <summary style="font-size: 1.125rem;"><strong>← expand for a brief <emphasis>"how-to"</emphasis> 📖</strong></summary>
                 <p>
                 <ul>
                     <li>type '#' to indicate that you are starting a new slide and then press ↵ (enter/return) twice.</li>
@@ -142,7 +142,7 @@ session_start(); ?>
             </details>
             <br>
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for a video short demo 🎬</strong></summary>
+                <summary style="font-size: 1.125rem;"><strong>← expand for a quick video demo 🎬</strong></summary>
                 <p>
                 <div class="responsive-video">
                     <iframe loading="lazy" width="100%" height="480" src="https://www.youtube.com/embed/DGudYy0sfx8" title="procrastiSlides demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
