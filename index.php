@@ -77,15 +77,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
         <br>
     <?php } else { ?>
         <div>
-            <h2 class="centered">markdown goes here:</h2>
+            <label for="user-input">
+                <h2 class="centered">markdown goes here:</h2>
+            </label>
             <form action="index.php" method="post">
-                <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
                 <textarea id="user-input" name="user-input" rows="8" cols="80"><?php echo $_SESSION['user-input'] ?? ''; ?></textarea>
-                <script type="text/javascript">
-                    var simplemde = new SimpleMDE({
-                        element: document.getElementById("user-input")
-                    });
-                </script>
                 <div class="centered">
                     <button type="submit" name="compile">create presentation</button>
                 </div>
@@ -148,6 +144,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
             return false;
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script type="text/javascript">
+        var simplemde = new SimpleMDE({
+            element: document.getElementById("user-input")
+        });
+    </script>
 </body>
-
 </html>
