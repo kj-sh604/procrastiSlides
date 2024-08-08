@@ -1,17 +1,22 @@
 <?php
-session_start(); ?>
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
+    $_SESSION['user-input'] = htmlspecialchars($_POST['user-input'], ENT_QUOTES, 'UTF-8');
+}
+?>
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
     <meta name="description" content="create .pdf presentations from markdown! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
-         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
+        non-intrusive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
     <?php include "includes/link-tags-in-head.php"; ?>
     <meta name="color-scheme" content="light dark">
 </head>
@@ -21,94 +26,71 @@ session_start(); ?>
     include "includes/procrastislides-banner.php";
     include "includes/main-info.php";
     include "includes/nav-header.php";
-    ?>
-    <?php if (isset($_POST["compile"])) {
-        $_SESSION["user-input"] = $_POST["user-input"]; ?>
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) { ?>
         <div class="centered">
             <h3>🎨 please select your presentation theme 🎭</h3>
-            <form class="" action="download.php" method="post">
+            <form id="theme-form" action="download.php" method="post" onsubmit="showGeneratingIndicator()">
                 <table class="centered">
-                    <th>
-                        <h2>preview</h2>
-                    </th>
-                    <th>
-                        <h2>select</h2>
-                    </th>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/90sMakeUpCommercial.webp" alt="90sMakeUpCommercial"><br></td>
-                        <td><button type="submit" name="90sMakeUpCommercial">90sMakeUpCommercial</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/chicagoOlives.webp" alt="chicagoOlives"><br></td>
-                        <td><button type="submit" name="chicagoOlives">chicagoOlives</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/cleanMetropolis.webp" alt="cleanMetropolis"><br></td>
-                        <td><button type="submit" name="cleanMetropolis">cleanMetropolis</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/earlyCupertino.webp" alt="earlyCupertino"><br></td>
-                        <td><button type="submit" name="earlyCupertino">earlyCupertino</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/ohioCustard.webp" alt="ohioCustard"><br></td>
-                        <td><button type="submit" name="ohioCustard">ohioCustard</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/raleighAroundMe.webp" alt="raleighAroundMe"><br></td>
-                        <td><button type="submit" name="raleighAroundMe">raleighAroundMe</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/defaultIsKing.webp" alt="defaultIsKing"><br></td>
-                        <td><button type="submit" name="defaultIsKing">defaultIsKing</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/cuppertinoIsh.webp" alt="Cuppertino-Ish"><br></td>
-                        <td><button type="submit" name="cuppertinoIsh">cuppertinoIsh</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/lazyProfessor.webp" alt="lazyProfessor"><br></td>
-                        <td><button type="submit" name="lazyProfessor">lazyProfessor</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/redmond2003.webp" alt="redmond2003"><br></td>
-                        <td><button type="submit" name="redmond2003">redmond2003</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/strengthInNumbers.webp" alt="strengthInNumbers"><br></td>
-                        <td><button type="submit" name="strengthInNumbers">strengthInNumbers</button></td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" class=theme-select src="img/thatMagazine.webp" alt="thatMagazine"><br></td>
-                        <td><button type="submit" name="thatMagazine">thatMagazine</button></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2>preview</h2>
+                            </th>
+                            <th>
+                                <h2>select</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $themes = [
+                            '90sMakeUpCommercial',
+                            'chicagoOlives',
+                            'cleanMetropolis',
+                            'earlyCupertino',
+                            'ohioCustard',
+                            'raleighAroundMe',
+                            'defaultIsKing',
+                            'cuppertinoIsh',
+                            'lazyProfessor',
+                            'redmond2003',
+                            'strengthInNumbers',
+                            'thatMagazine'
+                        ];
+
+                        foreach ($themes as $theme) { ?>
+                            <tr>
+                                <td><img loading="lazy" class="theme-select" src="img/<?= $theme ?>.webp" alt="<?= $theme ?>"><br></td>
+                                <td><button type="submit" name="<?= $theme ?>"><?= $theme ?></button></td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
                 </table>
+                <div id="generating-indicator" style="display: none;">
+                    <p>📊</p>
+                    <p>generating presentation...</p>
+                    <p>please wait.</p>
+                </div>
             </form>
         </div>
         <br>
-    <?php
-    } ?>
-    <?php if (!isset($_POST["compile"])) { ?>
+    <?php } else { ?>
         <div>
-            <br>
-            <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand to use the markdown editor 📝</strong></summary>
-                <p>
-                    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-                <form class="" action="index.php" method="post">
-                    <textarea id="user-input" name="user-input" rows="8" cols="80"><?php echo $_SESSION["user-input"]; ?></textarea>
-                    <div class="centered">
-                        <button type="submit" name="compile">create presentation</button>
-                    </div>
-                </form>
+            <h2 class="centered">markdown goes here:</h2>
+            <form action="index.php" method="post">
+                <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+                <textarea id="user-input" name="user-input" rows="8" cols="80"><?php echo $_SESSION['user-input'] ?? ''; ?></textarea>
                 <script type="text/javascript">
                     var simplemde = new SimpleMDE({
                         element: document.getElementById("user-input")
                     });
                 </script>
-                </p>
-            </details>
-            <br>
+                <div class="centered">
+                    <button type="submit" name="compile">create presentation</button>
+                </div>
+            </form>
+            <br><br>
             <details>
                 <summary style="font-size: 1.125rem;"><strong>← expand for a brief <emphasis>"how-to"</emphasis> 📖</strong></summary>
                 <p>
@@ -137,7 +119,7 @@ session_start(); ?>
                     </ul>
                 </ul>
                 <br>
-                <p class="centered"> <i>It's highly recommended that you use markdown lists rather than plain text lists</i> </p><br>
+                <p class="centered"><i>It's highly recommended that you use markdown lists rather than plain text lists</i></p><br>
                 </p>
             </details>
             <br>
@@ -156,6 +138,16 @@ session_start(); ?>
     <footer>
         <?php include "includes/nav-footer.php"; ?>
     </footer>
+
+    <script type="text/javascript">
+        function showGeneratingIndicator() {
+            document.getElementById('generating-indicator').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('theme-form').submit();
+            }, 200);
+            return false;
+        }
+    </script>
 </body>
 
 </html>
