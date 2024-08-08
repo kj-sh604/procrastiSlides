@@ -1,22 +1,17 @@
 <?php
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
-    $_SESSION['user-input'] = htmlspecialchars($_POST['user-input'], ENT_QUOTES, 'UTF-8');
-}
-?>
+session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
     <meta name="description" content="create .pdf presentations from markdown! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
-        non-intrusive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
+         non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
     <?php include "includes/link-tags-in-head.php"; ?>
     <meta name="color-scheme" content="light dark">
 </head>
@@ -26,11 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
     include "includes/procrastislides-banner.php";
     include "includes/main-info.php";
     include "includes/nav-header.php";
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) { ?>
+    ?>
+    <?php if (isset($_POST["compile"])) {
+        $_SESSION["user-input"] = $_POST["user-input"]; ?>
         <div class="centered">
             <h3>🎨 please select your presentation theme 🎭</h3>
-            <form id="theme-form" action="download.php" method="post" onsubmit="showGeneratingIndicator()">
+            <form action="download.php" method="post" onsubmit="showGeneratingIndicator()">
                 <table class="centered">
                     <thead>
                         <tr>
@@ -45,26 +41,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
                     <tbody>
                         <?php
                         $themes = [
-                            '90sMakeUpCommercial',
-                            'chicagoOlives',
-                            'cleanMetropolis',
-                            'earlyCupertino',
-                            'ohioCustard',
-                            'raleighAroundMe',
-                            'defaultIsKing',
-                            'cuppertinoIsh',
-                            'lazyProfessor',
-                            'redmond2003',
-                            'strengthInNumbers',
-                            'thatMagazine'
+                            '90sMakeUpCommercial' => '90sMakeUpCommercial',
+                            'chicagoOlives' => 'chicagoOlives',
+                            'cleanMetropolis' => 'cleanMetropolis',
+                            'earlyCupertino' => 'earlyCupertino',
+                            'ohioCustard' => 'ohioCustard',
+                            'raleighAroundMe' => 'raleighAroundMe',
+                            'defaultIsKing' => 'defaultIsKing',
+                            'cuppertinoIsh' => 'cuppertinoIsh',
+                            'lazyProfessor' => 'lazyProfessor',
+                            'redmond2003' => 'redmond2003',
+                            'strengthInNumbers' => 'strengthInNumbers',
+                            'thatMagazine' => 'thatMagazine',
                         ];
 
-                        foreach ($themes as $theme) { ?>
-                            <tr>
-                                <td><img loading="lazy" class="theme-select" src="img/<?= $theme ?>.webp" alt="<?= $theme ?>"><br></td>
-                                <td><button type="submit" name="<?= $theme ?>"><?= $theme ?></button></td>
-                            </tr>
-                        <?php } ?>
+                        foreach ($themes as $key => $theme) {
+                            echo "<tr>
+                            <td>
+                                <img loading='lazy' class='theme-select' src='img/{$key}.webp' alt='{$theme}'>
+                            </td>
+                            <td>
+                                <button type='submit' name='{$key}'>{$theme}</button>
+                            </td>
+                          </tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
                 <div id="generating-indicator" style="display: none;">
@@ -75,7 +76,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
             </form>
         </div>
         <br>
-    <?php } else { ?>
+    <?php
+    } ?>
+    <?php if (!isset($_POST["compile"])) { ?>
         <div>
             <label for="user-input">
                 <h2 class="centered">markdown goes here:</h2>
@@ -115,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
                     </ul>
                 </ul>
                 <br>
-                <p class="centered"><i>It's highly recommended that you use markdown lists rather than plain text lists</i></p><br>
+                <p class="centered"> <i>It's highly recommended that you use markdown lists rather than plain text lists</i> </p><br>
                 </p>
             </details>
             <br>
@@ -134,7 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
     <footer>
         <?php include "includes/nav-footer.php"; ?>
     </footer>
-
     <script type="text/javascript">
         function showGeneratingIndicator() {
             document.getElementById('generating-indicator').style.display = 'block';
@@ -151,4 +153,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['compile'])) {
         });
     </script>
 </body>
+
 </html>
