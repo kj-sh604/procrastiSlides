@@ -43,10 +43,10 @@ session_start(); ?>
                         $themes = [
                             '90sMakeUpCommercial' => '90sMakeUpCommercial',
                             'chicagoOlives' => 'chicagoOlives',
-                            'cleanMetropolis' => 'cleanMetropolis',
                             'earlyCupertino' => 'earlyCupertino',
                             'ohioCustard' => 'ohioCustard',
                             'raleighAroundMe' => 'raleighAroundMe',
+                            'redmond2010' => 'redmond2010',
                             'defaultIsKing' => 'defaultIsKing',
                             'cuppertinoIsh' => 'cuppertinoIsh',
                             'lazyProfessor' => 'lazyProfessor',

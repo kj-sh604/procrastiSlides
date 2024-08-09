@@ -54,8 +54,8 @@
             generatePresentation("output/90sMakeUpCommercial.md");
         } elseif (isset($_POST["chicagoOlives"])) {
             generatePresentation("output/chicagoOlives.md");
-        } elseif (isset($_POST["cleanMetropolis"])) {
-            generatePresentation("output/cleanMetropolis.md");
+        } elseif (isset($_POST["redmond2010"])) {
+            generatePresentation("output/redmond2010.md");
         } elseif (isset($_POST["ohioCustard"])) {
             generatePresentation("output/ohioCustard.md");
         } elseif (isset($_POST["raleighAroundMe"])) {
