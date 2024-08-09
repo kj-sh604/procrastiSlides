@@ -46,7 +46,7 @@ session_start(); ?>
                             'earlyCupertino' => 'earlyCupertino',
                             'ohioCustard' => 'ohioCustard',
                             'raleighAroundMe' => 'raleighAroundMe',
-                            'redmond2010' => 'redmond2010',
+                            'redmond2013' => 'redmond2013',
                             'defaultIsKing' => 'defaultIsKing',
                             'cuppertinoIsh' => 'cuppertinoIsh',
                             'lazyProfessor' => 'lazyProfessor',

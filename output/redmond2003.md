@@ -6,5 +6,5 @@ colortheme:
 fontsize:
 - 17pt
 fontfamily:
-- carlito
+- helvet
 ---
