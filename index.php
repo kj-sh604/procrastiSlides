@@ -137,11 +137,8 @@ session_start(); ?>
     </footer>
     <script type="text/javascript">
         function showGeneratingIndicator() {
-            document.getElementById('generating-indicator').style.display = 'block';
-            setTimeout(function() {
-                document.getElementById('theme-form').submit();
-            }, 200);
-            return false;
+            const generatingIndicator = document.getElementById('generating-indicator');
+            generatingIndicator.style.display = 'block';
         }
     </script>
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
