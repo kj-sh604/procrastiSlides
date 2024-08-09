@@ -76,9 +76,7 @@ session_start(); ?>
             </form>
         </div>
         <br>
-    <?php
-    } ?>
-    <?php if (!isset($_POST["compile"])) { ?>
+    <?php } else { ?>
         <div>
             <label for="user-input">
                 <h2 class="centered">markdown goes here:</h2>
