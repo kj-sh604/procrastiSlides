@@ -10,15 +10,15 @@
     <title>procrastiSlides: great for procratinators who need to get a presentation out, quick! 😆</title>
     <meta name="description" content="create .pdf presentations from markdown! 🤗 procrastiSlides is a simple presentation(s) site that respects your dark mode setting and has responsive web design.
          non-intruisive ads, no tracking, nothing but quick slides from plain text/markdown. 🏫 try copy and pasting your school notes! that might even work 😂">
-    <?php include "includes/link-tags-in-head.php"; ?>
+    <?php include "../includes/link-tags-in-head.php"; ?>
     <meta name="color-scheme" content="light dark"> 
 </head>
 
 <body>
     <?php
-    include "includes/license-banner.php";
-    include "includes/secondary-info.php";
-    include "includes/nav-header.php";
+    include "../includes/license-banner.php";
+    include "../includes/secondary-info.php";
+    include "../includes/nav-header.php";
     ?>
     <div class="centered">
         <pre>
@@ -160,7 +160,7 @@ This General Public License does not permit incorporating your program into prop
     <br>
     <footer>
 
-        <?php include "includes/nav-footer.php"; ?>
+        <?php include "../includes/nav-footer.php"; ?>
 
     </footer>
 </body>
