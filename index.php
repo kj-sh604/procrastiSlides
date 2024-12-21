@@ -124,9 +124,9 @@ session_start(); ?>
                 <summary style="font-size: 1.125rem;"><strong>← expand for a quick video demo 🎬</strong></summary>
                 <p>
                     <video controls>
-                        <source src="vids/DGudYy0sfx8.webm" type="video/webm">
-                        <source src="vids/DGudYy0sfx8.ogg" type="video/ogg">
-                        <source src="vids/DGudYy0sfx8.mp4" type="video/mp4">
+                        <source src="vids/A4upxlH2mIHOXYRq.webm" type="video/webm">
+                        <source src="vids/A4upxlH2mIHOXYRq.ogg" type="video/ogg">
+                        <source src="vids/A4upxlH2mIHOXYRq.mp4" type="video/mp4">
                         Your browser does not support modern open-source video implementations 😔.
                     </video>
                 </p>
