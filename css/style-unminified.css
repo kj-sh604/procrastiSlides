@@ -130,7 +130,7 @@ button {
     border-radius: 0.1875rem;
     margin: 0.625rem 0;
     font-size: 1rem;
-    font-family: monospace;
+    font-family: monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
     text-align: center;
 }
 
@@ -148,7 +148,7 @@ video {
 
 ul.no-bullets {
     list-style-type: none;
-    font-family: monospace;
+    font-family: monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 .CodeMirror-gutter-filler,
@@ -723,7 +723,7 @@ span.CodeMirror-selectedtext {
 
 .CodeMirror .CodeMirror-code .cm-comment {
     background-color: rgba(255, 255, 255, 0.05);
-    font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
     font-size: 0.875rem;
     padding: 0.375rem 0 0.25rem;
 }
@@ -769,7 +769,7 @@ span.CodeMirror-selectedtext {
 .editor-preview pre,
 .editor-preview-side pre {
     background-color: rgba(255, 255, 255, 0.05);
-    font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
     font-size: 0.875rem;
     line-height: 1.2;
     margin-top: 0.875rem;
@@ -1744,7 +1744,7 @@ span.CodeMirror-selectedtext {
         border-radius: 0.1875rem;
         margin: 0.625rem 0;
         font-size: 1rem;
-        font-family: monospace;
+        font-family: monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
         text-align: center;
     }
 
