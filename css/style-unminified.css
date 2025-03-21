@@ -1,6 +1,4 @@
 body {
-    background: #151515;
-    color: #ccc;
     max-width: 50rem;
     margin: auto;
     padding: 0 1rem;
@@ -8,27 +6,8 @@ body {
     font-family: sans-serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
-a {
-    color: #3498db;
-}
-
-a:visited {
-    color: #3498db;
-}
-
 h1 {
     text-align: center;
-}
-
-h1.forte {
-    text-align: center;
-    font-family: 'Forte', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
-    font-size: 2.25rem;
-    padding: 0.625rem;
-}
-
-h2 {
-    color: #ccc;
 }
 
 footer {
@@ -61,27 +40,11 @@ img[alt="XMR Logo"] {
     display: inline;
 }
 
-div.centered {
+.centered {
     text-align: center;
 }
 
-p.centered {
-    text-align: center;
-}
-
-h2.centered {
-    text-align: center;
-}
-
-h3.centered {
-    text-align: center;
-}
-
-h4.centered {
-    text-align: center;
-}
-
-input.center-block {
+.center-block {
     text-align: center;
     display: block;
     margin-right: auto;
@@ -122,13 +85,6 @@ td {
 }
 
 button {
-    background-color: #303030;
-    border: lightblue 1px solid;
-    padding: 0.3125rem 0.625rem;
-    color: lightblue;
-    text-decoration: none;
-    border-radius: 0.1875rem;
-    margin: 0.625rem 0;
     font-size: 1rem;
     font-family: monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
     text-align: center;
@@ -1735,45 +1691,8 @@ span.CodeMirror-selectedtext {
         background: rgba(255, 0, 0, 0.15);
     }
 
-    button {
-        background-color: #D0E5FF;
-        border: none;
-        padding: 0.3125rem 0.625rem;
-        color: #11427E;
-        text-decoration: none;
-        border-radius: 0.1875rem;
-        margin: 0.625rem 0;
-        font-size: 1rem;
-        font-family: monospace, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
-        text-align: center;
-    }
-
     body {
         background: whitesmoke;
-        color: black;
-    }
-
-    a {
-        color: #0061E0;
-    }
-
-    a:visited {
-        color: #0061E0;
-    }
-
-    h2 {
-        color: black;
-    }
-
-    code {
-        color: forestgreen;
-    }
-}
-
-@media print {
-    a[href] {
-        text-decoration: none;
-        color: black;
     }
 }
 
