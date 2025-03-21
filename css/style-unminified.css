@@ -1690,10 +1690,6 @@ span.CodeMirror-selectedtext {
     .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
         background: rgba(255, 0, 0, 0.15);
     }
-
-    body {
-        background: whitesmoke;
-    }
 }
 
 #generating-indicator {
