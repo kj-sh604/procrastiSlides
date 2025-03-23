@@ -1,6 +1,6 @@
 
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for a brief <emphasis>"how-to"</emphasis> 📖</strong></summary>
+                <summary><strong style="font-size: 1.125rem; text-decoration: underline; text-underline-offset: 0.375rem;">← expand for a brief <emphasis>"how-to"</emphasis> 📖</strong></summary>
                 <p>
                 <ul>
                     <li>type '#' to indicate that you are starting a new slide and then press ↵ (enter/return) twice.</li>

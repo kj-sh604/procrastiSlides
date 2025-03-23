@@ -1,5 +1,5 @@
             <details>
-                <summary style="font-size: 1.125rem;"><strong>← expand for a quick video demo 🎬</strong></summary>
+                <summary><strong style="font-size: 1.125rem; text-decoration: underline; text-underline-offset: 0.375rem;">← expand for a quick video demo 🎬</strong></summary>
                 <p>
                     <video controls>
                         <source src="vids/6iaXPNqAwksiXQnb.webm" type="video/webm">
