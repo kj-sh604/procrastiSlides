@@ -16,10 +16,7 @@
 
 ## Demo and Links
 
-[demo.webm](https://github.com/user-attachments/assets/3270f514-f19d-4136-8517-777e03a11e82)
-
-
-
+[demo.webm](https://github.com/user-attachments/assets/d5e638d2-1f1c-4958-8070-902dfc31f7ec)
 
 Main instance is found on: *[https://procrastislides.com/](https://procrastislides.com/)*
 
