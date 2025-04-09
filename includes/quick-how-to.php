@@ -1,4 +1,3 @@
-
             <details>
                 <summary><strong style="font-size: 1.125rem; text-decoration: underline; text-underline-offset: 0.375rem;">← expand for a brief <emphasis>"how-to"</emphasis> 📖</strong></summary>
                 <p>

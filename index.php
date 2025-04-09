@@ -33,7 +33,9 @@ session_start(); ?>
         <?php include "includes/nav-footer.php"; ?>
     </footer>
 
-    <!-- JS calls -->
+    <!-- Late CSS calls -->
+    <link rel="stylesheet" href="/css/simplemde.css">
+    <!-- Late JS calls -->
     <script type="text/javascript">
         function showGeneratingIndicator() {
             const generatingIndicator = document.getElementById('generating-indicator');
