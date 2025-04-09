@@ -20,7 +20,18 @@ session_start(); ?>
     <?php
     include "includes/procrastislides-banner.php";
     include "includes/main-info.php";
-    include "includes/nav-header.php";
+    include "includes/nav-header.php"; ?>
+
+    <link rel="stylesheet" href="/css/simplemde.css">
+    <script type="text/javascript">
+        function showGeneratingIndicator() {
+            const generatingIndicator = document.getElementById('generating-indicator');
+            generatingIndicator.style.display = 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+    <?php
     if (isset($_POST["compile"])) {
         $_SESSION["user-input"] = $_POST["user-input"];
         include "includes/download-logic.php";
@@ -33,22 +44,11 @@ session_start(); ?>
         <?php include "includes/nav-footer.php"; ?>
     </footer>
 
-    <!-- Late CSS calls -->
-    <link rel="stylesheet" href="/css/simplemde.css">
-    <!-- Late JS calls -->
-    <script type="text/javascript">
-        function showGeneratingIndicator() {
-            const generatingIndicator = document.getElementById('generating-indicator');
-            generatingIndicator.style.display = 'block';
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script type="text/javascript">
         var simplemde = new SimpleMDE({
             element: document.getElementById("user-input")
         });
     </script>
-
 </body>
 
 </html>
