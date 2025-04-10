@@ -29,7 +29,7 @@ session_start(); ?>
             generatingIndicator.style.display = 'block';
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="/js/simplemde.js"></script>
 
     <?php
     if (isset($_POST["compile"])) {
