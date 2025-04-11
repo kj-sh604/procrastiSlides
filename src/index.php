@@ -21,7 +21,6 @@ session_start(); ?>
     include "includes/procrastislides-banner.php";
     include "includes/main-info.php";
     include "includes/nav-header.php"; ?>
-    <script src="/js/simplemde.js"></script>
     <?php
     if (isset($_POST["compile"])) {
         $_SESSION["user-input"] = $_POST["user-input"];
@@ -34,13 +33,14 @@ session_start(); ?>
     <footer>
         <?php include "includes/nav-footer.php"; ?>
     </footer>
-    <link rel="stylesheet" href="/css/simplemde.css">
     <script type="text/javascript">
         function showGeneratingIndicator() {
             const generatingIndicator = document.getElementById('generating-indicator');
             generatingIndicator.style.display = 'block';
         }
     </script>
+    <link rel="stylesheet" href="/css/simplemde.css">
+    <script src="/js/simplemde.js"></script>
     <script type="text/javascript">
         var simplemde = new SimpleMDE({
             element: document.getElementById("user-input")
