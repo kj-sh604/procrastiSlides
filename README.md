@@ -25,4 +25,3 @@ Main instance is found on: *[https://procrastislides.com/](https://procrastislid
 * SimpleMDE's [github](https://github.com/sparksuite/simplemde-markdown-editor)
 * [LaTeX-project.org](https://www.latex-project.org/)
 * rust [uutils/coreutils](https://github.com/uutils/coreutils/) project
-
