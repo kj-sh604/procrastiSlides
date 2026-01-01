@@ -5,8 +5,6 @@
 
 Main instance is found on: *[https://procrastislides.com/](https://procrastislides.com/)*
 
-&nbsp;
-
 ## `LaTeX` Dependencies for Basic Functionality
 - texlive-bin
 - texlive-core
