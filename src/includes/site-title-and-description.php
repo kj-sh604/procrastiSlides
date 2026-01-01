@@ -1,0 +1,2 @@
+    <title>procrastiSlides: minimal markdown to presentation tool</title>
+    <meta name="description" content="create .pdf presentations from markdown! procrastiSlides is a simple presentation(s) site that respects your privacy: no ads, no tracking... just simple and quick slides from plain text/markdown">
