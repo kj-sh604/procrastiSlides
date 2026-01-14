@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include "includes/site-title-and-description.php"; ?>
     <?php include "includes/link-tags-in-head.php"; ?>
-    <meta name="color-scheme" content="light dark"> 
+    <meta name="color-scheme" content="light dark">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
     ?>
     <h3>licenses</h3>
     <ul>
+        <li> <a href="licenses/mit-kj.php">procrastiSlides license (mit)</a> </li>
         <li> <a href="licenses/gpl2.php"> pandoc's license (gnu gpl v2)</a> </li>
         <li><a href="licenses/LaTeX.php"> The LaTeX Project Public License (1.3)</a></li>
         <li><a href="licenses/mit.php"> SimpleMDE's license (mit)</a></li>
