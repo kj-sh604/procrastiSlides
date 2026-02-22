@@ -2,13 +2,10 @@ FROM php:8-cli
 
 RUN apt-get update && apt-get install -y \
     pandoc \
-    texlive \
-    texlive-latex-extra \
-    texlive-fonts-extra \
-    texlive-lang-chinese \
-    texlive-lang-japanese \
-    texlive-lang-all \
-    && rm -rf /var/lib/apt/lists/*
+    texlive-full \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/* /var/tmp/*
 
 WORKDIR /app
 
