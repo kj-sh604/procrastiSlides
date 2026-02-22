@@ -1,2 +1,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}{
+    \origfigure[H]
+}{
+    \endorigfigure
+}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\let\origincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+    \origincludegraphics[max width=\textwidth,max height=0.8\textheight,keepaspectratio,#1]{#2}%
+}
