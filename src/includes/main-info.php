@@ -1,4 +1,3 @@
-<p class="centered">a VERY minimal presentation(s) site to create quick slides from markdown<br>
-    (powered by LaTeX beamer, pandoc, and the rust uutils)</p>
-<p class="centered"><b>✨ latest feature update:</b> addition of 16:9 themes 🚀</p>
+<p class="centered">
+    this was an old high school project of mine that is now in <strong>maintenance mode</strong>, <br> please see <a href="https://sent-web.site/">sent-web</a> for the next generation of this project! 
 <hr>
