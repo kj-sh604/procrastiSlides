@@ -1,6 +1,6 @@
 # procrastiSlides
 
-> this was an old high school project of mine that is now in **maintenance mode**,
+> this was an old high school project of mine that is now in **maintenance mode**,<br>
 > please see [sent-web](https://sent-web.site/) for the next generation of this project! 
 
 ***Web-based Markdown Presentation Generator utilizing `pandoc` and `pdflatex`***
