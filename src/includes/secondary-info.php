@@ -1,4 +1,4 @@
-<p class="centered">this website is inspired from the suckless's presentation tool (<a target="_blank" href="https://tools.suckless.org/sent">sent</a>).
-    <br /> it uses pandoc and LaTeX beamer for the backend. <br><br><b>latest feature update:</b> addition of 16:9 themes
+<p class="centered">
+    this was an old high school project of mine that is now in <strong>maintenance mode</strong>, <br> please see <a href="https://sent-web.site/">sent-web</a> for the next generation of this project! 
 </p>
 <hr>
